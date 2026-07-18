@@ -394,6 +394,35 @@
 
   /* generic svg helper */
   svg{ display:block; }
+
+  /* ================= MOBILE ALIGNMENT FIXES ================= */
+  @media (max-width:480px){
+    .hero .corner{ width:78px; height:78px; }
+
+    .hero-date-badge{
+      flex-wrap:wrap;
+      justify-content:center;
+      text-align:center;
+      padding:14px 22px;
+      gap:10px;
+    }
+    .hero-date-badge .sep{ display:none; }
+    .hero-date-badge .t{ line-height:1.6; }
+
+    .contact-pill{
+      white-space:normal;
+      text-align:center;
+      max-width:90%;
+      line-height:1.7;
+    }
+
+    .fam-list li{
+      flex-direction:column;
+      align-items:flex-start;
+      gap:4px;
+    }
+    .fam-list li .place{ align-self:flex-end; }
+  }
 </style>
 </head>
 <body>
